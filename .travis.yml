@@ -9,4 +9,4 @@ before_install:
   - docker build -t fabiopt/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run fabiopt/docker-react npm run test -- --coverage
+  - docker run -e CI=true fabiopt/docker-react npm run test
