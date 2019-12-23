@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t fabioPT/docker-react -f Dockerfile.dev .
+  - docker build -t fabiopt/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run fabioPT/docker-react npm run test -- --coverage
+  - docker run fabiopt/docker-react npm run test -- --coverage
